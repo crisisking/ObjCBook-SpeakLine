@@ -12,6 +12,7 @@
 @interface AppController : NSObject {
 
     IBOutlet NSTextField *textField;
+    NSSpeechSynthesizer *synth;
     
 }
 
