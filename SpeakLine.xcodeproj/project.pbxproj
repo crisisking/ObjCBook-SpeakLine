@@ -13,6 +13,7 @@
 		93B8024D125D68D200A3508B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B8024B125D68D200A3508B /* MainMenu.xib */; };
 		93B80250125D68D200A3508B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 93B8024E125D68D200A3508B /* Credits.rtf */; };
 		93B80253125D68D200A3508B /* SpeakLineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B80252125D68D200A3508B /* SpeakLineAppDelegate.m */; };
+		93B8025F125D6AA900A3508B /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B8025E125D6AA900A3508B /* AppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		93B8024F125D68D200A3508B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		93B80251125D68D200A3508B /* SpeakLineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeakLineAppDelegate.h; sourceTree = "<group>"; };
 		93B80252125D68D200A3508B /* SpeakLineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeakLineAppDelegate.m; sourceTree = "<group>"; };
+		93B8025D125D6AA900A3508B /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ../AppController.h; sourceTree = "<group>"; };
+		93B8025E125D6AA900A3508B /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = ../AppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 		93B80237125D68D200A3508B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				93B8025D125D6AA900A3508B /* AppController.h */,
+				93B8025E125D6AA900A3508B /* AppController.m */,
 				93B80251125D68D200A3508B /* SpeakLineAppDelegate.h */,
 				93B80252125D68D200A3508B /* SpeakLineAppDelegate.m */,
 			);
@@ -158,6 +163,7 @@
 			files = (
 				93B8024A125D68D200A3508B /* main.m in Sources */,
 				93B80253125D68D200A3508B /* SpeakLineAppDelegate.m in Sources */,
+				93B8025F125D6AA900A3508B /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
