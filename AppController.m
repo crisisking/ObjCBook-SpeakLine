@@ -15,6 +15,7 @@
     if ((self = [super init])) {
         NSLog(@"init");
         synth = [[NSSpeechSynthesizer alloc] initWithVoice:nil];
+        [synth setDelegate:self];
     }
     
     return self;
@@ -28,12 +29,22 @@
     }
     
     [synth startSpeakingString:string];
+    [start setEnabled:NO];
+    [stop setEnabled:YES];
     NSLog(@"Started saying %@", string);
 }
 
 - (IBAction)stopIt:(id)sender {
     NSLog(@"Stopping");
     [synth stopSpeaking];
+}
+
+- (void)speechSynthesizer:(NSSpeechSynthesizer *)sender
+  didFinishSpeaking:(BOOL)finished 
+{
+    NSLog(@"finished = %d", finished);
+    [stop setEnabled:NO];
+    [start setEnabled:YES];
 }
 
 - (void)dealloc {
